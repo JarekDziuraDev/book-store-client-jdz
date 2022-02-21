@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import baseUrl from '../config';
+import Layout from "./layout/Layout";
 
 const App = ()  => {
 
@@ -9,7 +10,11 @@ const App = ()  => {
     console.log(books);
   })
 
-  return <div>My first component</div>
+  return (
+    <Layout>
+      <div>My first component</div>
+    </Layout>
+  );
 }
 
 export default App;
