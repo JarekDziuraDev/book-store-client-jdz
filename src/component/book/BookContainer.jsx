@@ -2,10 +2,14 @@ import { Box } from '@material-ui/core';
 import React from 'react';
 import BookFilter from './BookFilter';
 import styles from './BookStyles'
+import { useDispatch } from 'react-redux';
+import getBooksAction from '../../module/book/bookAction.js';
 
 const BookContainer = () => {
+    const dispatch = useDispatch();
+    dispatch(getBooksAction());
+    
     const classes = styles();
-
     return(
         <Box className={classes.bookContainer}>
             <BookFilter />
