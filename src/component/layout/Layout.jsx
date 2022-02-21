@@ -3,7 +3,7 @@ import { Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import Header from './Header';
 
-const PropTypes = {
+const propTypes = {
     children: PropTypes.node.isRequired
 }
 
@@ -20,5 +20,5 @@ const Layout = ({ children }) => {
     );
 };
 
-Layout.PropTypes = PropTypes;
+Layout.propTypes = propTypes;
 export default Layout;
