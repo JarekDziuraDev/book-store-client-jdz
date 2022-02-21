@@ -2,6 +2,7 @@ import React from "react";
 import axios from 'axios';
 import baseUrl from '../config';
 import Layout from "./layout/Layout";
+import BookContainer from "./book/BookContainer";
 
 const App = ()  => {
 
@@ -12,7 +13,7 @@ const App = ()  => {
 
   return (
     <Layout>
-      <div>My first component</div>
+      <BookContainer />
     </Layout>
   );
 }
